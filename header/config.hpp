@@ -10,5 +10,6 @@ namespace Config
 	static unsigned int bufferSizeInBytes = 1024;
 	// [-p] changes the initial position if data pointer
 	static unsigned int initialDataPointerPosition = 0;
+	
 }
 
