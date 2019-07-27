@@ -9,4 +9,6 @@
 	- <
 	+ > 
 ]
-< .	# print the result
+< .	++. # vmm
+
+. # output answer

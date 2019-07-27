@@ -71,8 +71,12 @@ bool Program::mIsCommentLine(char c)
 	{
 		/* skip untill a \n or eof */
 		if(_ == '\n')
+		{
+			mNumLines++;
 			break;
+		}
 	}
+	return true;
 }
 
 // @Incomplete: how to handle jumps ?

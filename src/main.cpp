@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
 {
 	FlagParser parser;
 	parser.parse(argc, argv);
-	// Config::showConfigSettings();
+	Config::showConfigSettings();
 
 	BrainFuckVM vm;
 	Program prog(Config::filePath);

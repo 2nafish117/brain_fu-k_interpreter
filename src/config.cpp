@@ -16,10 +16,10 @@ namespace Config
 	extern void showConfigSettings()
 	{
 		std::cout << "===Config settings:===\n";
-		std::cout << "file: 		" << Config::filePath << "\n";
-		std::cout << "buffsize: 	" << Config::bufferSizeInBytes << "\n";
-		std::cout << "initialpos: 	" << Config::initialDataPointerPosition << "\n";
-		std::cout << "numerrors: 	" << Config::maxNumErrorsShown << "\n";
-		std::cout << "shownum: 		" << Config::showNumInsteadOfChar << "\n";
+		std::cout << "file:\t\t\t" << Config::filePath << "\n";
+		std::cout << "buffer size:\t\t" << Config::bufferSizeInBytes << "\n";
+		std::cout << "initial pointer pos:\t" << Config::initialDataPointerPosition << "\n";
+		std::cout << "num errors shown:\t" << Config::maxNumErrorsShown << "\n";
+		std::cout << "use integer I/O:\t" << (Config::showNumInsteadOfChar == true ? "true" : "false") << "\n\n";
 	}
 }

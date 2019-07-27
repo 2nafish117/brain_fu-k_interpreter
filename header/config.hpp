@@ -12,11 +12,11 @@ namespace Config
 	extern unsigned int maxNumErrorsShown;
 	// [-b] changes amount of memory used in bytes
 	extern unsigned int bufferSizeInBytes;
-	// [-p] changes the initial position if data pointer
+	// [-p] changes the initial position of data pointer
 	extern unsigned int initialDataPointerPosition;
 	// [-n] makes the output in (8 bit, space separated, signed) integers instead of ASCII charecters. 
 	extern bool showNumInsteadOfChar;
-
+	
 	extern void showConfigSettings();
 }
 
