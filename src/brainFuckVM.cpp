@@ -110,9 +110,17 @@ void BrainFuckVM::mOutputDataByte()
 
 void BrainFuckVM::mInputDataByte()
 {
-	int val;
-	std::cin >> val;
-	*mDataPtr = (char)val;
+	if(Config::showNumInsteadOfChar)
+	{
+		int val;
+		std::cin >> val;
+		*mDataPtr = (char)val;
+	}
+	else
+	{
+		std::cin >> *mDataPtr;
+	}
+	
 	++mInstrPtr;
 }
 

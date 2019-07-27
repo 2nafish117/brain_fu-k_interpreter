@@ -2,3 +2,5 @@ obj/*
 bin/*
 .vscode/*
 debug/*
+obj/brainFuckVM.o
+bin/fuck

@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 	parser.parse(argc, argv);
 	// Config::showConfigSettings();
 
-	BrainFuckVM vm; 
+	BrainFuckVM vm;
 	Program prog(Config::filePath);
 	vm.executeProgram(prog);
 	std::cout.flush();
