@@ -1,4 +1,5 @@
 #include "program.hpp"
+#include "config.hpp"
 
 Program::Program(const std::string& path)
 : mFilePath(path), mNumLines(1), mNumErrors(0)
@@ -10,7 +11,7 @@ Program::Program(const std::string& path)
 		exit(EXIT_FAILURE);
 	}
 
-	std::cout << "tokenizing...\n";
+	// std::cout << "tokenizing...\n";
 	mTokenize();
 	mHandleErrors();
 }

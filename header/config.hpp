@@ -2,14 +2,22 @@
 
 namespace Config
 {
+	/*
+	* forward declarations for configs, include everywhere!!
+	*/
+
 	// [fileName] default filename if no filename specified
-	static std::string filePath("brain.fuck");
+	extern std::string filePath;
 	// [-e] changes number of errors shown if any
-	static unsigned int maxNumErrorsShown = 10;
+	extern unsigned int maxNumErrorsShown;
 	// [-b] changes amount of memory used in bytes
-	static unsigned int bufferSizeInBytes = 1024;
+	extern unsigned int bufferSizeInBytes;
 	// [-p] changes the initial position if data pointer
-	static unsigned int initialDataPointerPosition = 0;
-	
+	extern unsigned int initialDataPointerPosition;
+	// [-n] makes the output in (8 bit, space separated, signed) integers instead of ASCII charecters. 
+	extern bool showNumInsteadOfChar;
+
+	extern void showConfigSettings();
 }
+
 

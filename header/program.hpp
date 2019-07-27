@@ -4,10 +4,9 @@
 #include <fstream>
 #include <vector>
 #include <stack>
-#include <map>
 #include <cassert>
 
-#include "config.hpp"
+// #include "config.hpp"
 
 class Program
 {

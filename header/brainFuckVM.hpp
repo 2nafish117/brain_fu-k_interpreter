@@ -5,7 +5,7 @@
 #include <cassert>
 
 #include "program.hpp"
-#include "config.hpp"
+// #include "config.hpp"
 
 class BrainFuckVM
 {

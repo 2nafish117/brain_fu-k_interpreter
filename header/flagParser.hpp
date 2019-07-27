@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cstring>
 
-#include "config.hpp"
+// #include "config.hpp"
 
 /*
 general command:
@@ -11,10 +11,11 @@ general command:
 fuck [-f fileName] [-b size in bytes] [-p position] [-e number of errors]
 
 Use cases:
-fuck fileName			# interpret file
-fuck fileName -b 1024	# set buffer size to 1024 bytes
-fuck fileName -p 10	# set data pointer to 10 before program starts
-fuck fileName -e 100 	# show 100 errors
+fuck -f fileName			# interpret file fileName
+fuck -f fileName -b 1024	# set buffer size to 1024 bytes
+fuck -f fileName -p 10		# set data pointer to 10 before program starts
+fuck -f fileName -e 100 	# show 100 errors
+fuck -f fileName -n			# show numbers instead of charecters (space separarted numbers is output)
 */ 
 
 
@@ -93,6 +94,10 @@ void FlagParser::parse(int argc, char* argv[])
 				exit(EXIT_FAILURE);
 			}
 			i++;
+		}
+		else if(strcmp(argv[i], "-n") == 0)
+		{
+			Config::showNumInsteadOfChar = true;
 		}
 		else
 		{

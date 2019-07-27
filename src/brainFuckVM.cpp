@@ -1,4 +1,5 @@
 #include "brainFuckVM.hpp"
+#include "config.hpp"
 
 BrainFuckVM::BrainFuckVM()
 : mDataBuffSize(Config::bufferSizeInBytes), mInstrPtr(Config::initialDataPointerPosition)
@@ -100,7 +101,10 @@ void BrainFuckVM::mDecrementDataByte()
 
 void BrainFuckVM::mOutputDataByte()
 {
-	std::cout << (int)*mDataPtr;
+	if(Config::showNumInsteadOfChar)
+		std::cout << (int) *mDataPtr << " ";
+	else
+		std::cout << *mDataPtr;
 	++mInstrPtr;
 }
 
