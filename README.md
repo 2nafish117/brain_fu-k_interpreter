@@ -20,3 +20,5 @@
   `-e <number>`   specifies max number of errors displayed (in the terminal) if any (default value 10).
 
   `-p <position>` specifies initial position of pointer (default value 0).
+  
+  `-n` specifies if I/O should take inputs as integers or charecters (by default uses charecters, mainly a quality of life option).
