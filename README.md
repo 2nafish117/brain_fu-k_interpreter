@@ -1,4 +1,4 @@
-<h3>A simple Brain Fu*k interpreter made using cpp.</h3>
+<h3>A simple Brain Fu*k interpreter made in cpp.</h3>
 
 <b>Build:</b>
   
